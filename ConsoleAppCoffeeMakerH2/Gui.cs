@@ -20,6 +20,7 @@ namespace ConsoleAppCoffeeMakerH2
 
             Console.WriteLine("1. Filter-coffee ");
             Console.WriteLine("2. Te");
+            Console.WriteLine("3. Espresso");
         }
 
         public void Replenishment(string whatNeedsAnRefill)

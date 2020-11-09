@@ -35,16 +35,23 @@ namespace ConsoleAppCoffeeMakerH2
             switch (userChooseDrink)
             {
                 case 1:
-                    HotDrink coffee = new HotDrink(water, produkt, drinkType, produktType, temp);
+                    HotDrink coffee = new CoffeeMachine(water, produkt, drinkType, produktType, temp);
                     Console.WriteLine(coffee.MakeDrink());
                     Console.WriteLine(coffee.ServeDrink());
 
                     break;
 
                 case 2:
-                    HotDrink te = new HotDrink(water, produkt, drinkType, produktType, temp);
+                    HotDrink te = new Te(water, produkt, drinkType, produktType, temp);
                     Console.WriteLine(te.MakeDrink());
                     Console.WriteLine(te.ServeDrink());
+
+                    break;
+
+                case 3:
+                    HotDrink espresso = new CoffeeMachine(water, produkt, drinkType, produktType, temp);
+                    Console.WriteLine(espresso.MakeDrink());
+                    Console.WriteLine(espresso.ServeDrink());
 
                     break;
 
