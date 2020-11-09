@@ -9,7 +9,6 @@ namespace ConsoleAppCoffeeMakerH2
 {
     class HotDrink
     {
-        int waterTank;
         string drinkType;
         string produktType;
         int tempatur;
