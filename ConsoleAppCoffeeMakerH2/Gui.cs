@@ -19,6 +19,7 @@ namespace ConsoleAppCoffeeMakerH2
             Console.ResetColor();
 
             Console.WriteLine("1. Filter-coffee ");
+            Console.WriteLine("2. Te");
         }
 
         public void Replenishment(string whatNeedsAnRefill)

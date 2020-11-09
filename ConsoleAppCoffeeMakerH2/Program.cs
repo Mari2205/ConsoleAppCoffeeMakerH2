@@ -35,12 +35,18 @@ namespace ConsoleAppCoffeeMakerH2
             switch (userChooseDrink)
             {
                 case 1:
-                    HotDrink hotDrink = new HotDrink(water, produkt, drinkType, produktType, temp);
-                    Console.WriteLine(hotDrink.MakeDrink());
-                    Console.WriteLine(hotDrink.ServeDrink());
+                    HotDrink coffee = new HotDrink(water, produkt, drinkType, produktType, temp);
+                    Console.WriteLine(coffee.MakeDrink());
+                    Console.WriteLine(coffee.ServeDrink());
 
                     break;
 
+                case 2:
+                    HotDrink te = new HotDrink(water, produkt, drinkType, produktType, temp);
+                    Console.WriteLine(te.MakeDrink());
+                    Console.WriteLine(te.ServeDrink());
+
+                    break;
 
                 default:
                     Console.WriteLine("Please enter a valid number ");
