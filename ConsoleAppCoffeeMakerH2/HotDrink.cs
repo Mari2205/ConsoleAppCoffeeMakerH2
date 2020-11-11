@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace ConsoleAppCoffeeMakerH2
 {
@@ -43,6 +43,23 @@ namespace ConsoleAppCoffeeMakerH2
         {
             string mackingAnDrink = $"heating up the water and adding the {this.produktType}";
             return mackingAnDrink;
+        }
+
+        public string CheckContents()
+        {
+            if (howMuchWaterLeft <= 10 || howMuchProdukteft <= 7)
+            {
+                if (howMuchWaterLeft <= 10)
+                {
+                    return "water";
+                }
+                else if (howMuchProdukteft <= 7)
+                {
+                    return "Produkt";
+                }
+            }
+
+            return "error occurred, pleace restart now \n";
         }
     }
 }

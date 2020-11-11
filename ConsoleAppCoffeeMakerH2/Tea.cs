@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppCoffeeMakerH2
 {
-    class Te : HotDrink
+    class Tea : HotDrink
     {
-        public Te(int waterInTank, int howMuchproduktLeft, string typeOfDrink, string produktType, int whichTempatur) :
+        public Tea(int waterInTank, int howMuchproduktLeft, string typeOfDrink, string produktType, int whichTempatur) :
     base(waterInTank, howMuchproduktLeft, typeOfDrink, produktType, whichTempatur)
         {
 
