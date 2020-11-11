@@ -9,11 +9,11 @@ namespace ConsoleAppCoffeeMakerH2
 {
     class HotDrink
     {
-        string drinkType;
-        string produktType;
-        int tempatur;
-        public int howMuchWaterLeft;
-        public int howMuchProdukteft;
+        private string drinkType;
+        private string produktType;
+        private int tempatur;
+        private int howMuchWaterLeft;
+        private int howMuchProdukteft;
 
 
         int WaterTank { get => howMuchWaterLeft; set => howMuchWaterLeft = value; }
